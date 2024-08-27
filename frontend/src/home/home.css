@@ -1,0 +1,24 @@
+.homecontainer{
+    padding-top: 16%;
+    margin-left: 10%;
+   
+}
+
+.homeh2{
+    color: rgb(235, 160, 9);
+    font-size: 50px;
+    font-family:fantasy;
+}
+.homep{
+    color: white;
+    font-size: medium;
+    padding: 20px 0px;
+}
+.homebtn{
+    background-color:rgb(235, 160, 9) ;
+    color: black;
+    margin-left: 5%;
+}
+.homebtn:hover{
+    box-shadow: 0px 0px 10px 4px white;
+}
