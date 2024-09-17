@@ -108,5 +108,8 @@ const GETsingalstud= async (req,res)=>{
    console.log(err)
   }
 }
+ 
 
-module.exports = {addstudent , Getsudents , Removestudent,Updatestudent,Loginstudent, GETsingalstud }
+
+
+module.exports = {addstudent , Getsudents , Removestudent,Updatestudent,Loginstudent, GETsingalstud}

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './form.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 function Studentlog() {
     const navigate = useNavigate()
@@ -9,8 +9,10 @@ function Studentlog() {
         studentname:"",
         password:"",
     })
-
+    const[passspan,setpassspan]=useState(false)
     function Handelchange(e){
+        setpassspan(false)
+
         setval({...val,[e.target.name]:e.target.value})
 
 
@@ -29,6 +31,7 @@ function Studentlog() {
         
          const res = await response.json()
          alert(res.massage)
+        
          if(res.status){
             localStorage.setItem("studentEnroll",val.enrollment)
             navigate("/studentpage")
@@ -54,7 +57,7 @@ function Studentlog() {
                     <label for="exampleInputPassword3">PASSWORD</label>
                     <input type="password" className="form-control" id="exampleInputPassword3" placeholder="Password" name='password' onChange={Handelchange}/>
                 </div>
-               
+                
                 <button type="submit" className="btn btn-warning formbtn" style={{margin:"10px 42%"}} onClick={Handelsubmit}>Submit</button>
             </form>
             </div>
